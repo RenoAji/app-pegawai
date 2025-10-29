@@ -16,6 +16,7 @@
                     <li><a href="{{ url('/departments') }}" class="{{ Request::is('departments*') ? 'active' : '' }}">Departemen</a></li>
                     <li><a href="{{ url('/positions') }}" class="{{ Request::is('positions*') ? 'active' : '' }}">Jabatan</a></li>
                     <li><a href="{{ url('/attendances') }}" class="{{ Request::is('attendances*') ? 'active' : '' }}">Absensi</a></li>
+                    <li><a href="{{ url('/salaries') }}" class="{{ Request::is('salaries*') ? 'active' : '' }}">Gaji</a></li>
                 </ul>
             </nav>
         </div>

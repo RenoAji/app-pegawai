@@ -81,29 +81,7 @@
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td colspan="2" style="background-color: #f0f0f0; padding: 10px; font-weight: bold;">
-                    Informasi Gaji
-                </td>
-            </tr>
-            <tr>
-                <td>Tunjangan</td>
-                <td>
-                    <input type="number" name="tunjangan" 
-                        value="{{ old('tunjangan', $employee->salary->tunjangan ?? 0) }}" 
-                        min="0" step="0.01" required>
-                    <small>(Rp)</small>
-                </td>
-            </tr>
-            <tr>
-                <td>Potongan</td>
-                <td>
-                    <input type="number" name="potongan" 
-                        value="{{ old('potongan', $employee->salary->potongan ?? 0) }}" 
-                        min="0" step="0.01" required>
-                    <small>(Rp)</small>
-                </td>
-            </tr>
+
             <tr>
                 <td colspan="2">
                     <button type="submit">Update</button>

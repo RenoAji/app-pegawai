@@ -79,22 +79,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="background-color: #f0f0f0; padding: 10px; font-weight: bold;">
-                        Informasi Gaji
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="tunjangan">Tunjangan:</label></td>
-                    <td>
-                        <input type="number" id="tunjangan" name="tunjangan" value="{{ old('tunjangan', 0) }}" min="0" step="0.01" required>
-                        <small>(Rp)</small>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="potongan">Potongan:</label></td>
-                    <td>
-                        <input type="number" id="potongan" name="potongan" value="{{ old('potongan', 0) }}" min="0" step="0.01" required>
-                        <small>(Rp)</small>
+                    <td colspan="2" style="background-color: #e3f2fd; padding: 10px;">
+                        <small><em>💡 Catatan: Data gaji akan ditambahkan terpisah setelah pegawai dibuat</em></small>
                     </td>
                 </tr>
                 <tr>

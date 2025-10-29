@@ -37,7 +37,7 @@
                 <td>{{ $employee->nomor_telepon }}</td>
                 <td>{{ $employee->department->nama_departemen ?? '-' }}</td>
                 <td>{{ $employee->position->nama_jabatan ?? '-' }}</td>
-                <td>{{ $employee->salary->total_gaji}}</td>
+                <td>{{ $employee->salary ? 'Rp ' . number_format($employee->salary->total_gaji, 0, ',', '.') : 'Belum ada data' }}</td>
                 <td>{{ ucfirst($employee->status) }}</td>
                 <td>
                     <a href="{{ route('employees.show', $employee->id) }}">Detail</a> |

@@ -33,8 +33,14 @@ class Employee extends Model
         return $this->belongsTo(Attendance::class, 'jabatan_id');
     }
 
+    public function salaries()
+    {
+        return $this->hasMany(Salary::class, 'karyawan_id');
+    }
+
+    // Mendapatkan salary terbaru/bulan ini
     public function salary()
     {
-        return $this->hasOne(Salary::class, 'karyawan_id');
+        return $this->hasOne(Salary::class, 'karyawan_id')->latest('bulan');
     }
 }
