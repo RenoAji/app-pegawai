@@ -14,5 +14,27 @@ class Employee extends Model
         'alamat',
         'tanggal_masuk',
         'status',
+        'department_id',
+        'jabatan_id',
     ];
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
+
+    public function position()
+    {
+        return $this->belongsTo(Position::class, 'jabatan_id');
+    }
+
+    public function attendance()
+    {
+        return $this->belongsTo(Attendance::class, 'jabatan_id');
+    }
+
+    public function salary()
+    {
+        return $this->hasOne(Salary::class, 'karyawan_id');
+    }
 }
